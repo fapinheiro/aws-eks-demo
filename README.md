@@ -16,11 +16,11 @@ Follow the article in install-eks.txt file to set up a EC2 with kubectl, eks-cli
 `eksctl delete cluster cib-cross-services-k8s`
 
 # Start EFK Stack
-`kubectl appy -f storage-aws.yaml`
+`kubectl apply -f storage-aws.yaml`
 
-`kubectl appy -f fluentd-config.yaml`
+`kubectl apply -f fluentd-config.yaml`
 
-`kubectl appy -f elastic-stack.yaml`
+`kubectl apply -f elastic-stack.yaml`
 
 # Kibana Endpoint
 `kubectl get svc -n kube-system`
